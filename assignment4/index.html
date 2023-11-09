@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlphaHub - IT Education</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="shortcut icon" href="images/AlphaHub (5).png">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+              <img src="/images/AlphaHub (5).png" alt="AlphaHub Logo" height="30" class="d-inline-block align-text-top">
+              AlphaHub
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="courses.html">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="feedback.html">Feedback</a>
+            </ul>
+            <div id="language-switcher">
+              <button id="eng">Eng</button>
+              <a href="indexrus.html"><button id="rus">Rus</button></a>
+            </div>
+            <button onclick="toggleDarkMode()">Dark Theme</button>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+
+      <header style="background-image: url('images/AlphaHublll.png'); background-size: cover; background-position: center; color: #f58e00; text-align: center; padding: 150px;">
+        <h1>Welcome to AlphaHub</h1>
+        <p>The future of online IT education</p>
+    </header>
+
+    <h3 class="font-monospace">Our Top Courses:</h3>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/python.jpg" class="d-block w-100" alt="Python">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Python</h5>
+            <p>Python: For everyone, from beginners to experts.</p>
+            <a href="courses.html" class="btn btn-primary">More</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/java.jpg" class="d-block w-100" alt="Java">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Java</h5>
+            <p>Java: The foundation of modern software development.</p>
+            <a href="courses.html" class="btn btn-primary">More</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/github.png" class="d-block w-100" alt="GitHub">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>GitHub</h5>
+            <p>GitHub: Your home for code.</p>
+            <a href="courses.html" class="btn btn-primary">More</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <h3>Explore AlphaHub: </h3>
+    <div class="card-container">
+      <div class="card">
+        <img src="images/1.jpg" alt="Basics of Programming">
+        <div class="card-info">
+          <h3>Basics of Programming</h3>
+          <p>This course covers fundamental concepts in programming.</p>
+          <a href="courses.html">Explore</a>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="images/4.jpg" alt="Programming Languages">
+        <div class="card-info">
+          <h3>Programming Languages</h3>
+          <p>Explore various programming languages like Python, Java, and C++.</p>
+          <a href="courses.html">Explore</a>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="images/3.jpg" alt="Web Development">
+        <div class="card-info">
+          <h3>Web Development</h3>
+          <p>Learn front-end and back-end development with JavaScript, React, Vue.js, and more.</p>
+          <a href="courses.html">Explore</a>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="images/7.jpg" alt="Databases and Tools">
+        <div class="card-info">
+          <h3>Databases and Tools</h3>
+          <p>Explore MySQL, Git, and GitHub for effective development and version control.</p>
+          <a href="courses.html">Explore</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <h3>Contact Us</h3>
+      <form>
+          <div class="mb-3">
+              <label for="contactName" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="contactName" placeholder="John Doe">
+          </div>
+          <div class="mb-3">
+              <label for="contactEmail" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="contactEmail" placeholder="john.doe@example.com">
+          </div>
+          <div class="mb-3">
+              <label for="contactMessage" class="form-label">Your Message</label>
+              <textarea class="form-control" id="contactMessage" rows="4" placeholder="Type your message here..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </div>
+
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="contactModalLabel">Thank You!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <p>Your message has been received. We'll get back to you soon!</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <div class="footer-dark">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-3 item">
+              <h3>Services</h3>
+              <ul>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-3 item">
+              <h3>About</h3>
+              <ul>
+                <li><a href="index.html">Company</a></li>
+                <li><a href="courses.html">Price</a></li>
+                <li><a href="feedback.html">Contact Information</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 item text">
+              <h3>AlphaHub</h3>
+              <p>The beginning of new changes.</p>
+              <div class="col item social">
+                <a href="https://www.facebook.com/_smn17/'"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com/_smn17/'"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/_smn17/'"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/_smn17/'"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <p class="copyright"><strong>AlphaHub © 2023</strong></p>
+        </div>
+      </footer>
+    </div>
+  
+  </body>
+</html>
